@@ -1,15 +1,16 @@
 import random
-  
+
 InventoryToHer = []
 InventoryToHim = []
 
-Intro = str(input("Who are you?: ")) 
+# hello world
+Intro = str(input("Who are you?: "))
 for turn in range(2000000):
   if Intro == "Arlaine" or "arlaine":
     Prompt = str(input("Would you like to add a compliment or receive?: "))
     if Prompt == "add":
       InventoryToHim.append(str(input("What would you like to tell them?: ")))
-    # problem: will keep looping under given name, wont prompt intro again for other user 
+    # problem: will keep looping under given name, wont prompt intro again for other user
     elif Prompt == "receive":
       print(random.choice(InventoryToHer))
     else:
